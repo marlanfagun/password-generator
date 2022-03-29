@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="digitacao">
+      <h1>Criei sua senha segura aqui!</h1>
+    </div>
+    <span>1 - Selecione o tamanho da senha (8 à 30 caracteres).</span>
+    <span
+      >2 - Selecione quais tipos de caracteres deseja que a senha possua.</span
+    >
+    <span>3 - Clique no botão gerar senha.</span>
+    <div class="pw-container">
+      <div class="pw-header">
+        <div class="pw">
+          <span id="pw"> Senha aqui</span>
+          <button id="copy">Copiar</button>
+        </div>
+      </div>
+      <div class="pw-body">
+        <div class="form-control">
+          <lable for="length">Tamanho da senha</lable>
+          <input id="len" value="10" type="number" min="8" max="30" />
+        </div>
+        <div class="form-control">
+          <lable for="upper">Conter letras maiúsculas</lable>
+          <input id="upper" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <lable for="lower">Conter letras minúsculas</lable>
+          <input id="lower" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <lable for="number">Conter números </lable>
+          <input id="number" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <lable for="symbol">Conter símbolos</lable>
+          <input id="symbol" type="checkbox" />
+        </div>
+        <button class="generate" id="generate">Gerar Senha</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
